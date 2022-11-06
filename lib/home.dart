@@ -48,7 +48,7 @@ class Home extends ConsumerWidget {
             title: Text(data.elementAt(i)),
           ),
         ),
-        error: (error, stackTrace) => Center(child: Text('error')),
+        error: (error, stackTrace) => Center(child: Text('$error')),
         loading: () => const Center(child: CircularProgressIndicator()),
       ),
     );
